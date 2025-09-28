@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+button {
+    @apply bg-gray-600 text-white font-bold py-2 px-4 rounded hover:bg-gray-700;
+}
+
+body {
+    @apply bg-gradient-to-br from-red-700 via-red-500 to-rose-600 text-white;
+}
