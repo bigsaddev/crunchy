@@ -2,11 +2,11 @@
   <div class="flex gap-4">
     <!-- Input area -->
     <textarea v-model="input"
-              class="w-1/2 h-[85vh] p-2 resize-none font-semibold rounded-xl text-white bg-white/10 backdrop-blur-md border border-white/20 outline-none"
+              class="w-1/2 h-[80vh] p-2 resize-none font-semibold rounded-xl text-white bg-white/10 backdrop-blur-md border border-white/20 outline-none"
               placeholder="Type expressions here"></textarea>
 
     <!-- Output area -->
-    <div class="flex flex-col w-1/2 h-[85vh]">
+    <div class="flex flex-col w-1/2 h-[80vh]">
       <!-- Rendered math -->
       <div ref="rendered"
            class="flex-1 overflow-auto p-2 rounded-xl text-white bg-white/10 backdrop-blur-md border border-white/20"
