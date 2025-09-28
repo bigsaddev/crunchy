@@ -1,6 +1,6 @@
 # Meteor + Vue3 + Vite + KaTeX
 
-Live Rendering of LaTeX as Natural Math Equations
+Live Rendering of LaTeX as Natural Math Equations<br />
 No more \frac{1}{2}, just type 1/2
 
 ## How to use
