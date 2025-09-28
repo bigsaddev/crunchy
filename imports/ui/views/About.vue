@@ -1,7 +1,7 @@
 <template>
-  <div class="flex gap-4 flex-col max-w-3xl mx-auto p-4">
-    <h1 class="text-center text-4xl bg-white/10 backdrop-blur-md border border-white/20 outline-none p-2 rounded-xl font-bold">About Crunchy</h1>
-    <div class="bg-white/10 backdrop-blur-md border border-white/20 outline-none p-2 rounded-xl text-center">
+  <div class="flex gap-2 flex-col max-w-6xl mx-auto p-2">
+    <h1 class="text-center text-4xl custom-background font-bold">About Crunchy</h1>
+    <div class="custom-background text-center">
       <p class="mb-4">
         Crunchy is a web application designed to help users easily render LaTeX mathematical expressions in real-time. Whether you're a student, educator, or professional, Crunchy provides a simple and intuitive interface to visualize complex equations.
       </p>

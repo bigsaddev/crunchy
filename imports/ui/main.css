@@ -11,3 +11,7 @@ body {
 * {
     font-family: "Open Sans", sans-serif;
 }
+
+.custom-background {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 outline-none p-2 rounded-xl shadow-xl;
+}

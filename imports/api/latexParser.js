@@ -3,18 +3,21 @@ import katex from 'katex';
 export function parseToLatex(str) {
     let latex = str;
     
-    // Exponents
+    //Text enclosed in ""
+    latex = latex.replace(/"(.*?)"/gi, "\\text{$1}");
+
+    // Exponents - simple cases - x^2, x^3, x^n, x squared, x cubed
     latex = latex.replace(/(\w+)\^(\d+)/g, "$1^{$2}");
     latex = latex.replace(/(\w+)\s*squared/gi, "$1^{2}");
     latex = latex.replace(/(\w+)\s*cubed/gi, "$1^{3}");
     
-    // Fractions
+    // Fractions - simple cases - a/b, (a+b)/(c+d), x/y^2
     latex = latex.replace(/(\([^()]+\)|[a-zA-Z0-9]+)\/(\([^()]+\)|[a-zA-Z0-9^{}]+)/g, "\\frac{$1}{$2}");
     
-    // Basic functions
+    // Basic functions - sqrt()
     latex = latex.replace(/sqrt\[(.*?)\]/gi, "\\sqrt{$1}");
     
-    // Operators
+    // Operators - self explanatory
     latex = latex.replace(/\bplus\b/gi, "+");
     latex = latex.replace(/\bminus\b/gi, "-");
     latex = latex.replace(/\bequals\b/gi, "=");
